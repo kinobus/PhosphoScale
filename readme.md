@@ -11,22 +11,22 @@ Initial version
 ###Developer Guide
 
 ####Requirements
-git
-grunt
+*	git
+*	grunt
 
 ####Quick Start
 1.	Set up a local development environment (make sure you have the requirements installed locally)
 2.	make a local clone of the project https://github.com/kinobus/PhosphoScale.git
-3.	set up git remote origin: 
-  	
-  	$git remote origin ...
+3.	set up git remote origin:
+
+		$git remote origin https://github.com/kinobus/PhosphoScale.git
 
 
 ####Development Workflow
 
 1.	Develop locally with grunt
   	
-  	$grunt server
+  		$grunt server
 
 2.	Test and make sure whatever feature you are working on doesn't break anything, use karma to run tests (karma should run automatically at each save while running grunt watch)
 
@@ -56,6 +56,6 @@ the gh-pages branch is set up as a subtree of the root project that points to a 
 
 in a bash prompt where the current working directory is the project root directory '/PhosphoScale/' type:
 
-	$git subtree push --prefix dist origin gh-pages
+		$git subtree push --prefix dist origin gh-pages
 
 This deploys the master branch
